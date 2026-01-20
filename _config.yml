@@ -1,0 +1,45 @@
+# 站点基本信息
+title: "Star Platinum"
+name: "Star Platinum"
+description: "记录授权攻防测试与 Kali Linux 学习历程"
+url: "https://xyhftd.github.io" # 这里改成你自己的网址
+locale: "zh-CN"
+
+# 皮肤设置
+minimal_mistakes_skin: "dark" # 暗黑模式，非常适合技术博客
+
+# 远程加载最新版 Minimal Mistakes 主题
+remote_theme: "mmistakes/minimal-mistakes@master"
+
+# 插件配置
+plugins:
+  - jekyll-remote-theme
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# 作者信息（侧边栏展示）
+author:
+  name: "Star Platinum"
+  avatar: "/assets/images/avatar.png"
+  bio: "练习"
+  location: "中国"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/xyhftd"
+
+# 默认页面配置
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+
+# 首页配置
+include: ["_pages"]
